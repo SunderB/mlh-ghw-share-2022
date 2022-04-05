@@ -1,0 +1,56 @@
+* {
+    font-family: monospace;
+    margin: 0;
+    padding: 0px;
+}
+
+h2 {
+    font-size: 20pt;
+    margin-top: 20pt;
+}
+body {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    flex-direction: column;
+    /* align-content: center; */
+}
+
+button {
+    padding: 8pt 8pt;
+    border-radius: 4pt;
+}
+
+
+.telegram_card {
+    border-radius: 0pt;
+    width: 320pt;
+    height: 180pt;
+    box-shadow: 5px 10px 8px 10px #888888;
+    background-color: rgb(253, 228, 196);
+    border: 4pt rgb(180, 146, 102) solid;
+    border-radius: 8pt;
+}
+.telegram_card hr {
+    margin: 0 8pt;
+}
+.telegram_card h3 {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20pt;
+    margin: 4pt 10pt;
+}
+.telegram_card .textbox {
+    resize: none;
+    width: 300pt;
+    height: 140pt;
+    margin: 4pt 10pt;
+    background-color: rgb(253, 228, 196);
+    border: 1px black solid;
+    border-radius: 4pt;
+    font-family: monospace;
+    font-weight: bold;
+    vertical-align: text-top;
+    text-align: left;
+    font-size: 16pt;
+}

@@ -1,4 +1,5 @@
 const letters = new Map([
+    // Letters
     ['a', '.-'],
     ['b', '-...'],
     ['c', '-.-.'],
@@ -25,7 +26,23 @@ const letters = new Map([
     ['x', '-..-'],
     ['y', '-.--'],
     ['z', '--..'],
+
+    // Numbers
+    ['1', '.----'],
+    ['2', '..---'],
+    ['3', '...--'],
+    ['4', '...._'],
+    ['5', '.....'],
+    ['6', '-....'],
+    ['7', '--...'],
+    ['8', '---..'],
+    ['9', '----.'],
+    ['0', '-----'],
+
+    // Spaces/word-breaks
     [" ", "/"],
+
+    // Punctuation
     [".", ".-.-.-"],
     [",", "--..--"],
     ["?", "..--.."],
@@ -34,6 +51,7 @@ const letters = new Map([
     ["/", "-..-."]
 ]);
 
+// Based on https://stackoverflow.com/a/53313763
 function get_key(map, value) {
     matches = [...map].find(([key, val]) => val == value)
     if (matches != undefined) {
@@ -50,7 +68,7 @@ function text_to_morse(text) {
         if (letters.has(x)) {
             return letters.get(x)
         } else {
-            return ""
+            return "�"
         }
     });
     return morse_array.join(" ");
@@ -63,7 +81,7 @@ function morse_to_text(morse) {
         if (key != undefined) {
             return key
         } else {
-            return ""
+            return "�"
         }
     });
     return char_array.join("");
